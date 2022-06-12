@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostApplicationClientActivity">
+
+    <TableRow
+        android:layout_width="355dp"
+        android:layout_height="498dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Клиент"
+                android:textColor="#43AA1E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/editTextClientName"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editTextClientSurname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Фамилия"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextClientPatronic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Отчество"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Дата рождения"
+                        android:inputType="date" />
+
+                    <EditText
+                        android:id="@+id/editTextPlaceBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Место рождения"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextDocument"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Документ"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextWhoGive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Кем выдан"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/editTextNumberofDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewErrorClient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#F80505"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextDateGive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Дата выдачи"
+                        android:inputType="date" />
+
+                    <EditText
+                        android:id="@+id/editTextPlaceGive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Место выдачи"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Возраст"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/editTextCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Код подразделения "
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Пол"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Образование"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextNational"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Гражданство "
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextSnils"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Снилс"
+                        android:inputType="textPersonName" />
+
+                    <Button
+                        android:id="@+id/buttonPostClient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="postReadyApplicationClient"
+                        android:text="Ввести" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>
